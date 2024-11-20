@@ -1,7 +1,7 @@
 {
     "name": "tmoiseenko/moonshine-suneditor",
     "description": "SunEditor for moonshine",
-    "keywords": ["suneditor, moonshine, WYSIWYG"],
+    "keywords": ["suneditor", "moonshine", "WYSIWYG"],
     "type": "library",
     "license": "MIT",
     "support": {
@@ -21,7 +21,7 @@
         "ext-json": "*"
     },
     "require-dev": {
-        "../../../vendor/moonshine/moonshine": "3.x-dev"
+        "../../../vendor/moonshine/moonshine": ">2.0"
     },
     "autoload": {
         "psr-4": {
