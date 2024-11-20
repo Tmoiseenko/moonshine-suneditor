@@ -28,11 +28,6 @@
             "Tmoiseenko\\MoonshineSuneditor\\": "src/"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Tmoiseenko\\MoonshineSuneditor\\": "Tmoiseenko/MoonshineSuneditor/tests/"
-        }
-    },
     "conflict": {
         "moonshine/moonshine": "<2.0"
     },
