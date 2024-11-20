@@ -1,0 +1,46 @@
+{
+    "name": "Tmoiseenko/moonshine-suneditor",
+    "description": "SunEditor for moonshine",
+    "keywords": ["suneditor, moonshine, WYSIWYG"],
+    "type": "library",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/Tmoiseenko/moonshine-suneditor/issues",
+        "source": "https://github.com/Tmoiseenko/moonshine-suneditor"
+    },
+    "authors": [
+        {
+            "name": "Timur Moiseenko",
+            "email": "angrav-6@yandex.ru",
+            "homepage": "https://tmoiseenko.uz"
+        }
+    ],
+    "require": {
+        "php": "^8.0|^8.1|^8.2",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "../../../vendor/moonshine/moonshine": "3.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tmoiseenko\\MoonshineSuneditor\\": "Tmoiseenko/MoonshineSuneditor/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tmoiseenko\\MoonshineSuneditor\\": "Tmoiseenko/MoonshineSuneditor/tests/"
+        }
+    },
+    "conflict": {
+        "../../../vendor/moonshine/moonshine": "<2.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tmoiseenko\\MoonshineSuneditor\\Providers\\SunEditorServiceProvider"
+            ]
+        }
+    }
+}
