@@ -2,7 +2,7 @@ document.addEventListener('alpine:init', () => {
     Alpine.data('suneditor', (attachmentRoute) => ({
         init() {
             console.log('suneditor init')
-            const editor = SUNEDITOR.create(this.$el,{
+            const editor = SUNEDITOR.create(this.$el, {
                 height: 300,
                 width: '100%',
                 katex: katex,
@@ -18,6 +18,9 @@ document.addEventListener('alpine:init', () => {
                 ],
                 lang: SUNEDITOR_LANG['ru']
             })
-            },
+            editor.onChange = function (contents) {
+                parent.document.querySelector('.suneditor-textarea').value = contents
+            }
+        },
     }))
 })
