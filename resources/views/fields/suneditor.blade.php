@@ -5,5 +5,7 @@
         ::id="$id('suneditor')"
         x-data="suneditor"
         :data-language="!empty($element->locale) ? $element->locale : app()->getLocale()"
-        :data-buttonList="trim($element->buttonList . ' ' . $element->addedButtonList)"
+        :data-buttonList="trim($element->getButtonList())"
+        :data-height="trim($element->getHeight())"
+        :data-width="trim($element->getWidth())"
 >{!! $value ?? '' !!}</x-moonshine::form.textarea>
